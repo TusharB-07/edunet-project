@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmpathAI</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Load face-api.js from CDN -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/face-api.js/dist/face-api.min.js"
+    ></script>
+    <!-- Load main.js -->
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>EmpathAI</h1>
+    </header>
+    <main>
+      <div class="left-panel">
+        <video id="videoFeed" autoplay muted></video>
+        <div class="button-group">
+          <button id="recordBtn">Start Conversation</button>
+          <button id="doneBtn" style="display: none">Done Speaking</button>
+        </div>
+      </div>
+      <div class="right-panel">
+        <div id="chatContainer" class="chat-container">
+          <!-- Chat bubbles will be appended here dynamically -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
